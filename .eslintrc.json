@@ -3,8 +3,12 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "plugins": ["prettier"],
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off",
-    "@typescript-eslint/strict-boolean-expressions": "off"
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "no-return-await": "off",
+    "@typescript-eslint/return-await": "off"
   }
 }
