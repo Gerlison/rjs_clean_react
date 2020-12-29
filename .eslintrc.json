@@ -1,8 +1,17 @@
 {
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "extends": [
     "standard-with-typescript",
+    "plugin:react/recommended",
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
@@ -12,6 +21,8 @@
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/space-before-function-paren": "off",
     "no-return-await": "off",
-    "@typescript-eslint/return-await": "off"
+    "@typescript-eslint/return-await": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
   }
 }
